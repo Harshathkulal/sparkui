@@ -1,9 +1,10 @@
-
+import React from "react"
+import PageHeader from "@/components/Page-header"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-     Udasina UI
+    <div className="flex flex-col min-h-screen">
+      <PageHeader/>
     </div>
-  );
+  )
 }
