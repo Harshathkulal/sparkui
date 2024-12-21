@@ -9,32 +9,12 @@ export interface DocsConfig {
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "Documentation",
+      title: "Docs",
       href: "/docs",
     },
     {
       title: "Components",
-      href: "/docs/components/accordion",
-    },
-    {
-      title: "Blocks",
-      href: "/blocks",
-    },
-    {
-      title: "Charts",
-      href: "/charts",
-    },
-    {
-      title: "Themes",
-      href: "/themes",
-    },
-    {
-      title: "Colors",
-      href: "/colors",
+      href: "/components",
     },
   ],
   sidebarNav: [
