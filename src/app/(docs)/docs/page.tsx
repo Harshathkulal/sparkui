@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function IntroductionPage() {
   return (
-    <div className="max-w-4xl mx-auto space-y-12 py-8">
+    <div className="mx-auto space-y-12 py-8">
       {/* Hero Section */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">Udasina UI</h1>
