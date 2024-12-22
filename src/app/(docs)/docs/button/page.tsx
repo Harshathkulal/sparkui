@@ -1,8 +1,8 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card } from "@/components/ui/card";
 import { ButtonDemo } from "./Button-demo";
 import CodeBlock from "@/components/Code-block";
+import PreviewBlock from "@/components/preview-block";
 
 export default function ButtonPage() {
   // Define the source code of ButtonDemo as a string to display in the "Code" tab
@@ -29,14 +29,12 @@ export const ButtonDemo = () => {
             <TabsTrigger value="code">Code</TabsTrigger>
           </TabsList>
 
-          {/* Preview Tab */}
           <TabsContent value="preview">
-            <Card className="p-6 flex items-center justify-center min-h-[200px]">
-              <ButtonDemo /> {/* Render the ButtonDemo component */}
-            </Card>
+            <PreviewBlock>
+              <ButtonDemo />
+            </PreviewBlock>
           </TabsContent>
 
-          {/* Code Tab */}
           <TabsContent value="code">
             <CodeBlock code={buttonCode} />
           </TabsContent>
