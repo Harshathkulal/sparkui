@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import CodeBlock from "@/components/Code-block";
+import CodeBlock from "@/components/code-block";
 import PreviewBlock from "@/components/preview-block";
 
 // ComponentView accepts renderDemo as a prop, which is a function returning JSX
