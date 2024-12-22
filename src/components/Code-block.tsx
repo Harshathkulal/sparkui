@@ -5,16 +5,16 @@ import { Card } from "@/components/ui/card";
 import CopyButton from "./copy-button";
 
 interface SnippetProps {
-  code: string;
+  sourceCode: string;
 }
 
-const CodeBlock: React.FC<SnippetProps> = ({ code }) => {
+const CodeBlock: React.FC<SnippetProps> = ({ sourceCode }) => {
   return (
     <Card className="relative flex items-center justify-between p-2">
       <pre className="overflow-x-auto">
-        <code className="text-sm font-mono">{code}</code>
+        <code className="text-sm font-mono">{sourceCode}</code>
       </pre>
-      <CopyButton code={code} />
+      <CopyButton code={sourceCode} />
     </Card>
   );
 };
