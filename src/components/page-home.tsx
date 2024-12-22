@@ -1,6 +1,7 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { FaGithub } from "react-icons/fa6";
+import Link from "next/link";
 
 const PageHome = () => {
   return (
@@ -14,9 +15,16 @@ const PageHome = () => {
             Instant UI Components Just Copy, Paste & Done
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 mt-8">
-          <Button size="lg">Get Started</Button>
-          <Button size="lg" variant="outline">GitHub</Button>
+        <div className="flex flex-row gap-4 mt-8">
+          <Link href="/docs">
+            <Button size="lg">Get Started</Button>
+          </Link>
+          <Link href="https://github.com/Harshathkulal/UdasinaUI">
+            <Button size="lg" variant="outline">
+              <FaGithub />
+              GitHub
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -25,21 +33,9 @@ const PageHome = () => {
           <h2 className="text-3xl font-bold leading-tight sm:text-3xl md:text-6xl">
             Components
           </h2>
-          <p className="max-w-[85%] text-muted-foreground sm:text-lg">
-            Beautifully designed components that you can copy and paste into your apps.
+          <p className="max-w-[85%] text-muted-foreground sm:text-sm">
+            New component are cooking.
           </p>
-        </div>
-
-        <div className="mx-auto grid w-full max-w-[64rem] gap-6 sm:grid-cols-2 md:grid-cols-3 mt-12">
-          <Card className="flex flex-col">
-            <CardHeader>
-              <CardTitle>Button</CardTitle>
-              <CardDescription>A clickable button element.</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <Button>Click me</Button>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </main>
@@ -47,5 +43,3 @@ const PageHome = () => {
 };
 
 export default PageHome;
-
-

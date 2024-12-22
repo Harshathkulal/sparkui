@@ -12,10 +12,12 @@ import {
 import Link from "next/link";
 import { AlignLeftIcon } from "lucide-react";
 import { docsConfig } from "@/config/docs";
+import { ListFilter } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export function MobileNav() {
   return (
-    <nav className="md:hidden">
+    <nav className="md:hidden flex items-center justify-between gap-6">
       <div className="flex items-center justify-between gap-2">
         <Sheet>
           <SheetTrigger asChild>
@@ -42,6 +44,10 @@ export function MobileNav() {
           </SheetContent>
         </Sheet>
       </div>
+      <Link href="/" className="flex items-center pl-2">
+        <ListFilter className="hidden" />
+        <span className="font-bold lg:inline-block">{siteConfig.name}</span>
+      </Link>
     </nav>
   );
 }

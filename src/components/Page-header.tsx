@@ -2,6 +2,9 @@ import React from "react";
 import { ModeSwitcher } from "./mode-switcher";
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const PageHeader = () => {
   return (
@@ -12,7 +15,17 @@ const PageHeader = () => {
             <MainNav />
             <MobileNav />
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
+            <Link href="https://github.com/Harshathkulal/UdasinaUI">
+              <Button variant="ghost" size="icon">
+                <FaGithub />
+              </Button>
+            </Link>
+            <Link href="https://github.com/Harshathkulal/UdasinaUI">
+              <Button variant="ghost" size="icon">
+                <FaXTwitter />
+              </Button>
+            </Link>
             <ModeSwitcher />
           </div>
         </div>
