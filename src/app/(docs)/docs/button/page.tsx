@@ -1,8 +1,8 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
-import CopyButton from "@/components/copy-button";
 import { ButtonDemo } from "./Button-demo";
+import CodeBlock from "@/components/Code-block";
 
 export default function ButtonPage() {
   // Define the source code of ButtonDemo as a string to display in the "Code" tab
@@ -38,13 +38,7 @@ export const ButtonDemo = () => {
 
           {/* Code Tab */}
           <TabsContent value="code">
-            <Card className="relative">
-              <pre className="p-4 overflow-x-auto">
-                <code className="text-sm">{buttonCode}</code>{" "}
-                {/* Display the source code */}
-              </pre>
-              <CopyButton buttonCode={buttonCode} />
-            </Card>
+            <CodeBlock code={buttonCode} />
           </TabsContent>
         </Tabs>
       </div>
