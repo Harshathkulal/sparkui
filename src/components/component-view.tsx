@@ -12,7 +12,7 @@ const ComponentView = ({
   sourceCode: string;
 }) => {
   return (
-    <div className="p-6">
+    <div className="pt-4">
       <div className="max-w-3xl mx-auto space-y-6">
         <Tabs defaultValue="preview">
           <TabsList>
