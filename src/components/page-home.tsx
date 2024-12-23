@@ -2,12 +2,14 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
+import { ShineButton } from "./shine-component";
 
 const PageHome = () => {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <section className="container flex flex-col items-center px-4 py-12 md:py-16">
         <div className="flex max-w-[980px] flex-col items-center text-center gap-4">
+          <ShineButton />
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             Beautifully designed components
           </h1>
