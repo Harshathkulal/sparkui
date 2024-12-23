@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { CheckIcon, Copy } from "lucide-react";
+import { CheckIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { IoClipboardOutline } from "react-icons/io5";
 
 interface CopyButtonProps {
   code: string;
@@ -22,11 +23,11 @@ const CopyButton: React.FC<CopyButtonProps> = ({ code }) => {
 
   return (
     <div className="absolute top-2 right-2">
-      <Button variant="secondary" size="sm" onClick={handleCopy}>
+      <Button variant="secondary" size="xs" onClick={handleCopy}>
         {isCopied ? (
           <CheckIcon className="w-3 h-3 text-green-400" />
         ) : (
-          <Copy className="w-3 h-3" />
+          <IoClipboardOutline />
         )}
       </Button>
     </div>

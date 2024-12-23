@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { MoonIcon, SunIcon } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 export function ModeSwitcher() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme } = useTheme();
 
   const toggleTheme = React.useCallback(() => {
-    setTheme(theme === "dark" ? "light" : "dark")
-  }, [setTheme, theme])
+    setTheme(theme === "dark" ? "light" : "dark");
+  }, [setTheme, theme]);
 
   return (
     <Button
@@ -20,8 +20,8 @@ export function ModeSwitcher() {
       onClick={toggleTheme}
       aria-label="Toggle theme"
     >
-      <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <MoonIcon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <SunIcon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <MoonIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:rotate-90 dark:scale-0" />
     </Button>
-  )
+  );
 }
