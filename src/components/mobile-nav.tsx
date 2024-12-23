@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { AlignLeftIcon } from "lucide-react";
 import { docsConfig } from "@/config/docs";
-import { ListFilter } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export function MobileNav() {
@@ -44,8 +44,8 @@ export function MobileNav() {
           </SheetContent>
         </Sheet>
       </div>
-      <Link href="/" className="flex items-center pl-2">
-        <ListFilter className="hidden" />
+      <Link href="/" className="flex items-center pl-2 gap-1">
+        <Sparkles size={16} />
         <span className="font-bold lg:inline-block">{siteConfig.name}</span>
       </Link>
     </nav>

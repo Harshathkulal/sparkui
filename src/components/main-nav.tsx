@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import {ListFilter} from "lucide-react"
+import {Sparkles} from "lucide-react"
 
 export function MainNav() {
   const pathname = usePathname();
@@ -12,7 +12,7 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-      <ListFilter />
+      <Sparkles />
         <span className="hidden font-bold lg:inline-block">
           {siteConfig.name}
         </span>
