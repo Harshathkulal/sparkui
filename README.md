@@ -49,7 +49,7 @@ We welcome contributions from the community! There are many ways to contribute t
 
 ```bash
 git clone https://github.com/<your username>/sparkui.git
-cd cms
+cd sparkui
 ```
 
 3. Create a new branch
