@@ -7,11 +7,11 @@ import CopyButton from "./copy-button";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-interface SnippetProps {
+interface CodeBlockProps {
   sourceCode: string;
 }
 
-const CodeBlock: React.FC<SnippetProps> = ({ sourceCode }) => {
+const CodeBlock: React.FC<CodeBlockProps> = ({ sourceCode }) => {
   return (
     <Card className="relative flex flex-col items-stretch p-0 w-full">
       <SyntaxHighlighter

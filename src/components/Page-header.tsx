@@ -5,6 +5,7 @@ import { MobileNav } from "./mobile-nav";
 import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { siteConfig } from "@/config/site";
 
 const PageHeader = () => {
   return (
@@ -16,12 +17,12 @@ const PageHeader = () => {
             <MobileNav />
           </div>
           <div className="flex items-center space-x-2">
-            <Link href="https://github.com/Harshathkulal/UdasinaUI">
+            <Link target="_blank" href={siteConfig.links.github}>
               <Button variant="ghost" size="icon">
                 <FaGithub />
               </Button>
             </Link>
-            <Link href="https://github.com/Harshathkulal/UdasinaUI">
+            <Link target="_blank" href={siteConfig.links.github}>
               <Button variant="ghost" size="icon">
                 <FaXTwitter />
               </Button>

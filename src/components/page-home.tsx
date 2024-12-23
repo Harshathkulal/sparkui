@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { ShineButton } from "./shine-component";
+import { siteConfig } from "@/config/site";
 
 const PageHome = () => {
   return (
@@ -21,7 +22,7 @@ const PageHome = () => {
           <Link href="/docs">
             <Button size="lg">Get Started</Button>
           </Link>
-          <Link href="https://github.com/Harshathkulal/UdasinaUI">
+          <Link target="_blank" href={siteConfig.links.github}>
             <Button size="lg" variant="outline">
               <FaGithub />
               GitHub
