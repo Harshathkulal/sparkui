@@ -79,5 +79,5 @@ Read our [contribution guidelines](./CONTRIBUTING.md) for more details.
 ## Contributors
 
 <a  href="https://github.com/Harshathkulal/sparkui/graphs/contributors">
-<!-- <img  src="https://contrib.rocks/image?repo=Harshathkulal/sparkui&max=400&columns=20"  /> -->
+<img  src="https://contrib.rocks/image?repo=Harshathkulal/sparkui&max=400&columns=20"  />
 </a>
