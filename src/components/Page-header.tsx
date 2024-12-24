@@ -17,12 +17,20 @@ const PageHeader = () => {
             <MobileNav />
           </div>
           <div className="flex items-center space-x-2">
-            <Link target="_blank" href={siteConfig.links.github}>
+            <Link
+              target="_blank"
+              href={siteConfig.links.github}
+              aria-label="Visit GitHub"
+            >
               <Button variant="ghost" size="icon">
                 <FaGithub />
               </Button>
             </Link>
-            <Link target="_blank" href={siteConfig.links.github}>
+            <Link
+              target="_blank"
+              href={siteConfig.links.github}
+              aria-label="Visit Twitter"
+            >
               <Button variant="ghost" size="icon">
                 <FaXTwitter />
               </Button>
