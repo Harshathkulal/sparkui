@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
   SheetDescription,
-  SheetClose, // Import SheetClose
+  SheetClose,
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { AlignLeftIcon } from "lucide-react";
@@ -21,7 +21,9 @@ export function MobileNav() {
       <div className="flex items-center justify-between gap-2">
         <Sheet>
           <SheetTrigger asChild>
-            <AlignLeftIcon size={20} />
+            <button aria-label="Open menu">
+              <AlignLeftIcon size={20} />
+            </button>
           </SheetTrigger>
           <SheetContent>
             {docsConfig.mainNav.map((link) => (

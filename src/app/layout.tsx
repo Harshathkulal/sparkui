@@ -56,7 +56,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/spark.svg",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export default function RootLayout({
