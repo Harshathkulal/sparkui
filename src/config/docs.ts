@@ -40,6 +40,7 @@ export const docsConfig: DocsConfig = {
           title: "Button",
           href: "/docs/button",
           items: [],
+          label: "New",
         },
       ],
     },

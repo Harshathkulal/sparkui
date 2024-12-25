@@ -4,6 +4,7 @@ export interface NavItem {
     href: string;
     icon?: string;
     items?: NavItem[];
+    label?: string
   }
   
   export type MainNavItem = NavItem;
