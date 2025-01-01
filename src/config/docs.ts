@@ -40,6 +40,11 @@ export const docsConfig: DocsConfig = {
           title: "Button",
           href: "/docs/components/button",
           items: [],
+        },
+        {
+          title: "Avatar",
+          href: "/docs/components/avatar",
+          items: [],
           label: "New",
         },
       ],
