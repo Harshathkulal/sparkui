@@ -14,7 +14,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Components",
-      href: "/components",
+      href: "/docs/components/button",
     },
   ],
   sidebarNav: [
@@ -38,7 +38,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Button",
-          href: "/docs/button",
+          href: "/docs/components/button",
           items: [],
           label: "New",
         },

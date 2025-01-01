@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import {Sparkles} from "lucide-react"
+import { Sparkles } from "lucide-react";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -12,7 +12,7 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-      <Sparkles />
+        <Sparkles />
         <span className="hidden font-bold lg:inline-block">
           {siteConfig.name}
         </span>
@@ -28,61 +28,16 @@ export function MainNav() {
           Docs
         </Link>
         <Link
-          href="/docs/components"
+          href="/docs/components/button"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/components") &&
-              !pathname?.startsWith("/docs/component/chart")
+            pathname?.startsWith("/docs/components/button") &&
+              !pathname?.startsWith("/docs/component/button")
               ? "text-foreground"
               : "text-foreground/80"
           )}
         >
           Components
-        </Link>
-        <Link
-          href="/blocks"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/blocks")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Blocks
-        </Link>
-        <Link
-          href="/charts"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/component/chart") ||
-              pathname?.startsWith("/charts")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Charts
-        </Link>
-        <Link
-          href="/themes"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/themes")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Themes
-        </Link>
-        <Link
-          href="/colors"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/colors")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Colors
         </Link>
       </nav>
     </div>
