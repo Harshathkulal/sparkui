@@ -47,6 +47,12 @@ export const docsConfig: DocsConfig = {
           items: [],
           label: "New",
         },
+        {
+          title: "Carousel",
+          href: "/docs/components/carousel",
+          items: [],
+          label: "New",
+        },
       ],
     },
   ],
